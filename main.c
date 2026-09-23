@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 void	free_split(char **nums)
 {
@@ -31,18 +30,6 @@ static int	print_error(void)
 	write(2, "Error\n", 6);
 	return (1);
 }
-
-/*void	print(t_stack *st)
-{
-	t_node	*node;
-
-	node = st->top;
-	while (node)
-	{
-		printf("%d, ", node->value);
-		node = node->next;
-	}
-}*/
 
 int	main(int argc, char **argv)
 {
@@ -72,8 +59,6 @@ int	main(int argc, char **argv)
 		flags.disorder = compute_disorder(&a);
 		run_strategy(&a, &b, &flags);
 	}
-	//print(&a);
-	//printf("Tamanho final de B: %d\n", b.size);
 	/*free_stack(&a);
 	free_stack(&b);
 	free_split(nums);*/
