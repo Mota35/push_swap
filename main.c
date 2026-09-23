@@ -32,7 +32,7 @@ static int	print_error(void)
 	return (1);
 }
 
-void	print(t_stack *st)
+/*void	print(t_stack *st)
 {
 	t_node	*node;
 
@@ -42,7 +42,7 @@ void	print(t_stack *st)
 		printf("%d, ", node->value);
 		node = node->next;
 	}
-}
+}*/
 
 int	main(int argc, char **argv)
 {
@@ -72,7 +72,7 @@ int	main(int argc, char **argv)
 		flags.disorder = compute_disorder(&a);
 		run_strategy(&a, &b, &flags);
 	}
-	print(&a);
+	//print(&a);
 	//printf("Tamanho final de B: %d\n", b.size);
 	/*free_stack(&a);
 	free_stack(&b);

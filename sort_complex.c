@@ -90,8 +90,8 @@ static void	quicksort_b(t_stack *a, t_stack *b, int len, t_flags *flags)
 		rrb(b, flags);
 		i++;
 	}
-	quicksort_b(a, b, len - pushed, flags);
 	quicksort_a(a, b, pushed, flags);
+	quicksort_b(a, b, len - pushed, flags);
 }
 
 void	sort_complex(t_stack *a, t_stack *b, t_flags *flags)
